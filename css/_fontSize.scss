@@ -1,0 +1,45 @@
+@import './media.scss';
+
+
+@mixin h2{
+    font-size: 1.8125rem;/*h2 29px*/
+    @include mac{
+        font-size: 1.25rem;/*20px*/
+    }
+    @include pad{
+        font-size: 1rem;/*16px*/
+    }
+}
+
+
+
+@mixin h3{
+    font-size: 1.5rem;/*h3 24px*/
+    @include mac{
+        font-size: 1rem;/*16px*/
+    }
+    @include pad{
+        font-size: .8rem;/*12.8px*/
+    }
+}
+
+@mixin h4{
+    font-size: 1.25rem;/*20px*/
+    @include mac{
+        font-size: .9rem;/*14px*/
+    }
+    @include pad{
+        font-size: .8rem;/*12.8px*/
+    }
+}
+
+
+@mixin p{
+    font-size: 1rem;/*16px*/
+    @include mac{
+        font-size: .9rem;/*14px*/
+    }
+    @include pad{
+        font-size: .8rem;
+    }
+}

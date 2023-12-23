@@ -1,0 +1,78 @@
+@import './media.scss';
+nav{
+    // position: fixed;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content:center;
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content:space-evenly;
+        padding: 1.2vw 5vw 0.2vw 7vw;
+        font-size: clamp(12px, 1.5vw, 16px);
+        line-height: 150%;
+        letter-spacing: 4px;
+        @include mac{
+            font-size: 1rem;
+        }
+        @include pad{
+            font-size: 0.8rem;
+        }
+        .nav-list-item{
+            width: auto;
+            height: auto;
+            padding: 0 3.5vw;
+            a{
+                color: #535353;
+                transition: all 0.35s;
+                padding: 0 0 0.2vw 0;
+                border-bottom: 2px solid transparent;
+                &:hover{
+                    border-bottom: 2px solid #FFB117;
+                }
+                img{
+                    width: 6vw;
+                    height: auto;
+                    @include pad{
+                        width: 8vw;
+                    }
+                }
+            }
+        }
+        
+
+    }
+
+    .nav-list-item-icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            a{
+                height: 0.9vw;
+                width: auto;
+                padding: 0 0.5vw;
+                @include mac{
+                    height: 1.2vw;
+                }
+                @include pad{
+                    height: 1.5vw;
+                }
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+                
+            }
+            
+        }
+    }
+
+}
